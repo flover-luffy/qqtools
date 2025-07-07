@@ -14,7 +14,7 @@ function webRequest(): void {
       /* 网易云信修改 */
       Object.assign(headers, {
         Origin: 'https://pocketapi.48.cn',
-        'User-Agent': 'PocketFans201807/24020203'
+        'User-Agent': 'PocketFans201807/25060602'
       });
     }
 

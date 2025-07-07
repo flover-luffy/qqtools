@@ -22,7 +22,7 @@ export async function requestSMS({ mobile, area = '86', answer }: RequestSMSArgu
 
   if (answer) object.answer = answer;
 
-  const res: GotResponse<SMSResult> = await got('https://pocketapi.48.cn/user/api/v1/sms/send2', {
+  const res: GotResponse<SMSResult> = await got('https://pocketapi.48.cn/user/api/v2/sms/send2', {
     method: 'POST',
     headers: createHeaders(),
     responseType: 'json',
