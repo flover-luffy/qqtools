@@ -68,7 +68,7 @@ class NimChatroomSocket {
       this.nimChatroomSocket = NIM_SDK.Chatroom.getInstance({
         appKey: atob(appKey),
         chatroomId: this.pocket48RoomId,
-        chatroomAddresses: ['chatweblink01.netease.im:443'],
+        chatroomAddresses: ['chatweblink01.yunxinapi.com:443'],
         onconnect(event: any): void {
           resolve();
           console.log('进入聊天室', event);

@@ -3,14 +3,14 @@ import { session, type OnBeforeSendHeadersListenerDetails, type BeforeSendRespon
 function webRequest(): void {
   session.defaultSession.webRequest.onBeforeSendHeaders({
     urls: [
-      'ws://*.netease.im:*/*',
-      'wss://*.netease.im:*/*'
+      'ws://*.yunxinapi.com:*/*',
+      'wss://*.yunxinapi.com:*/*'
     ]
   }, function(details: OnBeforeSendHeadersListenerDetails, callback: (res: BeforeSendResponse) => void): void {
     const url: URL = new URL(details.url);
     const headers: Record<string, string> = { ...details.requestHeaders };
 
-    if (/ws{1,2}:/i.test(url.protocol) && /netease\.im/i.test(url.hostname)) {
+    if (/ws{1,2}:/i.test(url.protocol) && /yunxinapi\.com/i.test(url.hostname)) {
       /* 网易云信修改 */
       Object.assign(headers, {
         Origin: 'https://pocketapi.48.cn',
