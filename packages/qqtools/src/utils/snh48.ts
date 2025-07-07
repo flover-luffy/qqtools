@@ -24,14 +24,14 @@ export function createHeaders(token?: string): { [key: string]: string } {
     appInfo: JSON.stringify({
       vendor: 'apple',
       deviceId: `${ rStr(8) }-${ rStr(4) }-${ rStr(4) }-${ rStr(4) }-${ rStr(12) }`,
-      appVersion: '6.2.2',
-      appBuild: '21080401',
-      osVersion: '11.4.1',
+      appVersion: '7.1.34',
+      appBuild: '25060602',
+      osVersion: '19.0.0',
       osType: 'ios',
-      deviceName: 'iPhone XR',
+      deviceName: 'iPhone 15',
       os: 'ios'
     }),
-    'User-Agent': 'PocketFans201807/6.0.16 (iPhone; iOS 13.5.1; Scale/2.00)',
+    'User-Agent': 'PocketFans201807/7.1.34 (iPhone; iOS 19.0; Scale/2.00)',
     'Accept-Language': 'zh-Hans-AW;q=1',
     Host: 'pocketapi.48.cn'
   };
