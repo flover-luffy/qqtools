@@ -4,7 +4,7 @@
   "dependencies": {
     "got": "^14.4.2",
     "lodash": "^4.17.21",
-    "nim-web-sdk-ng": "^0.17.0",
+    "nim-web-sdk-ng": "^0.19.2",
     "playwright-core": "^1.40.1"
   }
 }

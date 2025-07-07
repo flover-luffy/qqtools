@@ -10,7 +10,7 @@
   "dependencies": {
     "chrome-launcher": "^0.15.2",
     "chrome-remote-interface": "^0.33.0",
-    "node-nim": "^9.16.5",
+    "node-nim": "^10.9.13",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
